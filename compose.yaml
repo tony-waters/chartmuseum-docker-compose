@@ -1,0 +1,10 @@
+services:
+  chartmuseum:
+    image: ghcr.io/helm/chartmuseum:v0.14.0
+    volumes:
+      - .:/app
+    environment:
+      STORAGE: local
+      STORAGE_LOCAL_ROOTDIR: /app
+
+
